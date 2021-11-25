@@ -1,7 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import InterviewPoint from "./component/InterviewPoint";
+import { store } from "./reducers";
+import "./styles/index.css";
 
 ReactDOM.render(
-    <div>This is new React APP</div>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <InterviewPoint />
+  </Provider>,
+  document.getElementById("root")
 );

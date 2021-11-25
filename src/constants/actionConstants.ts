@@ -1,0 +1,5 @@
+const GET_ALL_SUBJECT_LIST = 'GET_ALL_SUBJECT_LIST';
+
+export {
+    GET_ALL_SUBJECT_LIST,
+}
