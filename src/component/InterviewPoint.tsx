@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getAllSubjectList } from '../actions/interviewPointAction';
+import DetailSection from './DetailSection';
 import Sidebar from './Sidebar';
 
 class InterviewPoint extends React.PureComponent {
@@ -11,9 +12,10 @@ class InterviewPoint extends React.PureComponent {
 
     render() {
         return (
-            <>
+            <div className="main-container">
               <Sidebar />
-            </>
+              <DetailSection />
+            </div>
         );
     }
 }

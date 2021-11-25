@@ -1,4 +1,4 @@
-import { GET_ALL_SUBJECT_LIST } from "../constants/actionConstants"
+import { GET_ALL_SUBJECT_LIST, GET_INTERVIEW_DATA_BY_TOPIC_NAME } from "../constants/actionConstants"
 
 const getAllSubjectList = () => {
     return {
@@ -6,6 +6,14 @@ const getAllSubjectList = () => {
     }
 }
 
+const getInterviewDataByTopicName = (topicName) => {
+    return {
+        type: GET_INTERVIEW_DATA_BY_TOPIC_NAME,
+        payload: topicName,
+    }
+}
+
 export {
     getAllSubjectList,
+    getInterviewDataByTopicName,
 }
